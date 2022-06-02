@@ -12,7 +12,7 @@ import {
   NavBtnLink
 } from './styles'
 
-export const Navbar = () => {
+export const Navbar = ({ toggle }) => {
   return(
     <>
       <Nav>
@@ -20,7 +20,7 @@ export const Navbar = () => {
           <NavLogo to="/">
             Bombasaro
           </NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>

@@ -42,7 +42,7 @@ export const NavLogo = styled(LinkRouter)`
   display: flex;
   align-items: center;
 
-  font-family: 'Federo', sans-serif;
+  font-family: 'Caudex', serif;
   text-decoration: none;
 `;
 

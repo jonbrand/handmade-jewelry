@@ -9,17 +9,17 @@ import {
   SidebarRoute
 } from './styles'
 
-export const Sidebar = () => {
+export const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <SidebarContainer>
-      <Icon>
+    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+      <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to='works'>Trabalhos</SidebarLink>
-          <SidebarLink to='contact'>Contato</SidebarLink>
-          <SidebarLink to='about'>Sobre</SidebarLink>
+          <SidebarLink to='works' onClick={toggle}>Trabalhos</SidebarLink>
+          <SidebarLink to='contact' onClick={toggle}>Contato</SidebarLink>
+          <SidebarLink to='about' onClick={toggle}>Sobre</SidebarLink>
         </SidebarMenu>
         <SidebarBtnWrap>
           <SidebarRoute to='signin'>Login</SidebarRoute>
