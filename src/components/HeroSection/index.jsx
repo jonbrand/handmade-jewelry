@@ -10,6 +10,7 @@ import {
   ArrowForward, 
   ArrowRight
 } from './styles';
+import { Button } from '../Button/styles';
 import Video from '../../videos/video.mp4'
 
 export const HeroSection = () => {
@@ -32,8 +33,14 @@ export const HeroSection = () => {
           Conheça nosso catálogo de joias artesanais, tenha já a sua!
         </HeroP>
         <HeroBtnWrapper>
-          <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover}>
-            Comece agora {hover ? <ArrowForward /> : <ArrowRight />}
+          <Button 
+            to='signup' 
+            onMouseEnter={onHover} 
+            onMouseLeave={onHover}
+            primary='true'
+            dark='true'
+          >
+            Compre agora {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
