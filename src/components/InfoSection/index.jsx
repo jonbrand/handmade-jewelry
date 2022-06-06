@@ -14,31 +14,43 @@ import {
   Img
 } from './styles';
 
-export const InfoSection = () => {
+export const InfoSection = ({ 
+  id, 
+  lightBg, 
+  imgStart, 
+  topLine, 
+  lightText, 
+  headline, 
+  darkText, 
+  description, 
+  buttonLabel, 
+  img, 
+  alt,
+}) => {
   return (
     <>
-      <InfoContainer>
+      <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-          <InfoRow>
+          <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
                 <TopLine>
-                  TopLine
+                  {topLine}
                 </TopLine>
-                <Heading>
-                  Heading
+                <Heading lightText={lightText}>
+                  {headline}
                 </Heading>
-                <Subtitle>
-                  Subtitle
+                <Subtitle darkText={darkText}>
+                  {description}
                 </Subtitle>
                 <BtnWrap>
-                  <Button to='home'>Button</Button>
+                  <Button to='home'>{buttonLabel}</Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img />
+                <Img src={img} alt={alt}/>
               </ImgWrap>
             </Column2>
           </InfoRow>
