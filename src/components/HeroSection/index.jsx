@@ -27,10 +27,10 @@ export const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>
-          Criação de Joias Artesanais
+          Transformando seus sonhos em preciosidades
         </HeroH1>
         <HeroP>
-          Conheça nosso catálogo de joias artesanais, tenha já a sua!
+          Obras de artes feitas a mão com muita  exclusividade e criatividade
         </HeroP>
         <HeroBtnWrapper>
           <Button 
@@ -40,7 +40,7 @@ export const HeroSection = () => {
             primary='true'
             dark='true'
           >
-            Compre agora {hover ? <ArrowForward /> : <ArrowRight />}
+            Veja o Catálogo {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
