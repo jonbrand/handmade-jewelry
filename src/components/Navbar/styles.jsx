@@ -43,6 +43,7 @@ export const NavLogo = styled(LinkRouter)`
   align-items: center;
 
   font-family: 'Caudex', serif;
+  font-weight: 700;
   text-decoration: none;
 `;
 
