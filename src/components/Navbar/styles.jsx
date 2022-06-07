@@ -42,8 +42,7 @@ export const NavLogo = styled(LinkRouter)`
   display: flex;
   align-items: center;
 
-  font-family: 'Caudex', serif;
-  font-weight: 700;
+  font-weight: bold;
   text-decoration: none;
 `;
 
@@ -107,7 +106,7 @@ export const NavBtn = styled.nav`
 `;
 
 
-export const NavBtnLink = styled(LinkRouter)`
+export const NavBtnLink = styled(LinkScroll)`
   border-radius: 3rem;
   background: #bf1d01;
   white-space: nowrap;
