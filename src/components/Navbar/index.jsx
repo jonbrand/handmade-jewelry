@@ -62,7 +62,7 @@ export const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to='/signin'>Login</NavBtnLink>
+            <NavBtnLink to='/signin'>Catalogo</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
