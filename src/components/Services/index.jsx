@@ -7,30 +7,40 @@ import {
   ServiceH2, 
   ServicesP
 } from './styles';
-import Icon1 from '../../images/image-4.png';
-import Icon2 from '../../images/image-5.png';
-import Icon3 from '../../images/image-1.png';
 
-export const Services = () => {
+export const Services = ({
+  id, 
+  lightBg, 
+  topLine,
+  headlineOne,
+  headlineTwo,
+  headlineThree,
+  descriptionOne,
+  descriptionTwo,
+  descriptionThree,
+  img01,
+  img02,
+  img03 
+}) => {
   return (
     <>
-      <ServicesContainer id="services">
-        <ServicesH1>Trabalhos</ServicesH1>
+      <ServicesContainer lightBg={lightBg} id={id}>
+        <ServicesH1>{topLine}</ServicesH1>
         <ServicesWrapper>
           <ServicesCard>
-            <ServicesIcon src={Icon1} />
-            <ServiceH2>Reduce services and taxs</ServiceH2>
-            <ServicesP>Service new</ServicesP>
+            <ServicesIcon src={img01} />
+            <ServiceH2>{headlineOne}</ServiceH2>
+            <ServicesP>{descriptionOne}</ServicesP>
           </ServicesCard>
           <ServicesCard>
-            <ServicesIcon src={Icon2} />
-            <ServiceH2>Reduce taxs</ServiceH2>
-            <ServicesP>Service new</ServicesP>
+            <ServicesIcon src={img02} />
+            <ServiceH2>{headlineTwo}</ServiceH2>
+            <ServicesP>{descriptionTwo}</ServicesP>
           </ServicesCard>
           <ServicesCard>
-            <ServicesIcon src={Icon3} />
-            <ServiceH2>Taxs</ServiceH2>
-            <ServicesP>Service new</ServicesP>
+            <ServicesIcon src={img03} />
+            <ServiceH2>{headlineThree}</ServiceH2>
+            <ServicesP>{descriptionThree}</ServicesP>
           </ServicesCard>
         </ServicesWrapper>
       </ServicesContainer>

@@ -1,0 +1,22 @@
+export const worksObj = {
+  id: 'works',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: true,
+  topLine: 'Trabalhos',
+  headlineOne: 'Anel da Argentina',
+  descriptionOne: 'Anel de safira com ouro 18k',
+  headlineTwo: 'Aliança da Tasmânia',
+  descriptionTwo: 'Anel de diamantes',
+  headlineThree: 'Aneis Personalizáveis',
+  descriptionThree: 'Faça seu próprio estilo',
+  buttonLabel: 'Venha conhecer!',
+  imgStart: true,
+  img01: require('../../images/image-4.png'),
+  img02: require('../../images/image-5.png'),
+  img03: require('../../images/image-1.png'),
+  alt: 'Diamante',
+  dark: true,
+  primary: true,
+  darkText: true
+};

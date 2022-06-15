@@ -4,6 +4,7 @@ import { useState } from "react";
 import { HeroSection } from "../../components/HeroSection";
 import { InfoSection } from "../../components/InfoSection";
 import { homeObjOne, homeObjTwo, homeObjThree } from "../../components/InfoSection/data";
+import { worksObj } from '../../components/Services/data';
 import { Services } from "../../components/Services";
 import { Footer } from '../../components/Footer';
 
@@ -19,7 +20,7 @@ export const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      <Services />
+      <Services {...worksObj}/>
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjThree} />
